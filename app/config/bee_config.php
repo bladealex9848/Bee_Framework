@@ -4,20 +4,20 @@
 define('IS_LOCAL'   , in_array($_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1']));
 
 // Definir el uso horario o timezone del sistema
-date_default_timezone_set('America/Mexico_City');
+date_default_timezone_set('America/Bogota');
 
 // Lenguaje
 define('LANG'       , 'es');
 
 // Ruta base de nuestro proyecto
-define('BASEPATH'   , IS_LOCAL ? '/cursos/udemy_03/proyecto01/' : '____EL BASEPATH EN PRODUCCIÓN___');
+define('BASEPATH'   , IS_LOCAL ? '/Bee_Framework/' : '____EL BASEPATH EN PRODUCCIÓN___');
 
 // Sal del sistema
 define('AUTH_SALT'  , 'BeeFramework<3');
 
 // Puerto y la URL del sitio
-define('PORT'       , '7879');
-define('URL'        , IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/cursos/udemy_03/proyecto01/' : '___URL EN PRODUCCIÓN___');
+define('PORT'       , '8848');
+define('URL'        , IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/Bee_Framework/' : '___URL EN PRODUCCIÓN___');
 
 // Las rutas de directorios y archivos
 define('DS'         , DIRECTORY_SEPARATOR);
