@@ -24,12 +24,12 @@ class homeController extends Controller {
     try {
 
       // SELECT
-      $sql = 'SELECT * FROM tests WHERE id=:id AND name=:name';
+      $sql = 'SELECT * FROM users WHERE id=:id AND name=:name';
       $res = Db::query($sql, ['id' => 1, 'name' => 'John Doe']);
       print_r($res);
 
       // INSERT
-      $sql = 'INSERT INTO tests (name, email, created_at) VALUES (:name, :email, :created_at)';
+      $sql = 'INSERT INTO users (name, email, created_at) VALUES (:name, :email, :created_at)';
       $registro =
       [
         'name'       => 'Juanito',
@@ -40,7 +40,7 @@ class homeController extends Controller {
       //print_r($id);
 
       // UPDATE
-      $sql = 'UPDATE tests SET name=:name WHERE id=:id';
+      $sql = 'UPDATE users SET name=:name WHERE id=:id';
       $registro_actualizado = 
       [
         'name' => 'Ricardo Algo',
@@ -49,11 +49,11 @@ class homeController extends Controller {
       //print_r(Db::query($sql, $registro_actualizado));
 
       // DELETE
-      $sql = 'DELETE FROM tests WHERE id=:id LIMIT 1';
+      $sql = 'DELETE FROM users WHERE id=:id LIMIT 1';
       //print_r(Db::query($sql, ['id' => 4]));
 
       // ALTER TABLE
-      $sql = 'ALTER TABLE tests ADD COLUMN username VARCHAR(255) NULL AFTER name';
+      $sql = 'ALTER TABLE users ADD COLUMN username VARCHAR(255) NULL AFTER name';
       //print_r(Db::query($sql));
 
 
