@@ -32,8 +32,8 @@ class homeController extends Controller {
       $sql = 'INSERT INTO users (name, email, created_at) VALUES (:name, :email, :created_at)';
       $registro =
       [
-        'name'       => 'Juanito',
-        'email'      => 'juanito@gmail.com',
+        'name'       => 'Juanita',
+        'email'      => 'juanita@gmail.com',
         'created_at' => now()
       ];
       //$id = Db::query($sql, $registro);
@@ -43,8 +43,8 @@ class homeController extends Controller {
       $sql = 'UPDATE users SET name=:name WHERE id=:id';
       $registro_actualizado = 
       [
-        'name' => 'Ricardo Algo',
-        'id'   => 3
+        'name' => 'Ricarda',
+        'id'   => 8
       ];
       //print_r(Db::query($sql, $registro_actualizado));
 
